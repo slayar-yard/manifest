@@ -13,13 +13,12 @@ By initializing the repo with this source, you're completely acknowledge that yo
 
 To initialize your local repository, use this command:
 
-	repo init -u https://github.com/BootleggersROM/manifest.git -b queso
+	repo init -u https://github.com/BootleggersROM/manifest.git -b rimbon
 
 Then, be sure to add your device manifest in your local_manifests folder and finally, do:
 
-	repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -jx
-	(the x on jx it's the amount of cores you have)
-
+	 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+	
 Also, just in case something went wrong for our side, or from your manifest or whatever, just add a `-q` in your repo sync command to see less lines and get into the issue more easily.
 
 ### Let's start building
