@@ -21,7 +21,6 @@
            fetch="https://gitlab.com/" />
 
   <!-- General -->
-  <project path="manifest" name="manifest" remote="brokenlab" />
   <project path="bionic" name="bionic" remote="brokenlab" />
   <project path="bootable/recovery" name="bootable_recovery" remote="brokenlab" />
 
